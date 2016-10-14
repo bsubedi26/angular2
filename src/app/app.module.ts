@@ -6,24 +6,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/navbar/navbar.component';
-import { MapComponent } from './components/map/map.component';
-
-import { AgmCoreModule } from 'angular2-google-maps/core';
+import { SearchComponent } from './components/search/search.component';
 
 // Import new components by adding it to the declarations array
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    MapComponent
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBoBjj5MOkNFhoSYDxz9Af_CddmWpNK-HA'
-    })
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,6 @@ export class NavBarComponent {
 
   clicked() {
     console.log('click works')
-    
+    axios.get('/api').then(data => console.log(data)) 
   }
 }
